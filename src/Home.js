@@ -6,32 +6,32 @@ import image1 from './images/image1.jpg';
 import image2 from './images/image2.JPG';
 import image3 from './images/image3.JPG';
 
-// Updated projects data
+// Projects data remains the same
 const PROJECTS = [
   {
     title: 'Workshop Series',
     description: 'Comprehensive workshop materials and hands-on projects covering machine learning, web development, and software engineering fundamentals. Access our extensive collection of resources including code samples, tutorials, and interactive learning materials.',
-    image: image1, // Should be 800x800px for optimal quality
+    image: image1,
     tech: ['Python', 'TensorFlow', 'React', 'Node.js'],
     link: 'https://drive.google.com/drive/u/1/folders/1CNWkzl_znJvKjW31b6ubw_RxEbAvh7rF'
   },
   {
     title: 'Islamic GenAI Guild',
     description: 'Pioneering project evaluating AI models on Islamic knowledge, creating comprehensive datasets for Fiqh and Aqeedah, and developing standardized grading systems. Features automated testing frameworks and detailed performance analytics.',
-    image: image2, // Should be 800x800px for optimal quality
+    image: image2,
     tech: ['Python', 'LangChain', 'Evaluation Framework', 'Dataset Creation'],
     link: 'https://halalai.org/'
   },
   {
     title: 'MTC Website',
     description: 'Modern, responsive website featuring a dynamic hero section and community engagement tools. Built with custom dark theme, Space Grotesk typography, and smooth animations. Includes Discord integration and mobile-first design.',
-    image: image3, // Should be 800x800px for optimal quality
+    image: image3,
     tech: ['React', 'Space Grotesk', 'CSS Grid', 'Discord Integration'],
     link: 'https://github.com/zainkhatri/mtc-website'
   }
 ];
 
-// ProjectCard Component with hover effects and link handling
+// ProjectCard Component remains the same
 const ProjectCard = ({ project }) => {
   const handleClick = () => {
     if (project.link) {
@@ -57,7 +57,7 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-// Hero Section Component
+// Hero Section remains the same
 const Hero = () => (
   <div className="hero">
     <div className="hero-content">
@@ -70,11 +70,10 @@ const Hero = () => (
   </div>
 );
 
-// Join Section Component
+// Updated JoinSection with correct Discord link
 const JoinSection = () => {
   const handleJoinClick = () => {
-    // Add your Discord invite link here
-    window.open('YOUR_DISCORD_LINK', '_blank', 'noopener noreferrer');
+    window.open('https://discord.gg/CJYPHGb8nS', '_blank', 'noopener noreferrer');
   };
 
   return (
@@ -90,13 +89,13 @@ const JoinSection = () => {
   );
 };
 
-// Footer Component
+// Updated Footer with correct social links
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const socialLinks = [
     { name: 'Instagram', url: 'https://instagram.com/mtcucsd' },
-    { name: 'Discord', url: 'YOUR_DISCORD_LINK' },
-    { name: 'LinkedIn', url: 'YOUR_LINKEDIN_LINK' }
+    { name: 'Discord', url: 'https://discord.gg/CJYPHGb8nS' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/company/mtcucsd/' }
   ];
 
   return (
@@ -120,7 +119,7 @@ const Footer = () => {
   );
 };
 
-// Main Home Component
+// Main Home Component remains the same
 function Home() {
   return (
     <div className="home">
