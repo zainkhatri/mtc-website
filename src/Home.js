@@ -89,36 +89,6 @@ const JoinSection = () => {
   );
 };
 
-// Updated Footer with correct social links
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  const socialLinks = [
-    { name: 'Instagram', url: 'https://instagram.com/mtcucsd' },
-    { name: 'Discord', url: 'https://discord.gg/CJYPHGb8nS' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/company/mtcucsd/' }
-  ];
-
-  return (
-    <footer>
-      <div className="container">
-        <p>© {currentYear} Muslim Tech Collaborative at UCSD</p>
-        <div className="footer-links">
-          {socialLinks.map((link, index) => (
-            <a 
-              key={index} 
-              href={link.url} 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
-      </div>
-    </footer>
-  );
-};
-
 // Main Home Component remains the same
 function Home() {
   return (
@@ -135,7 +105,6 @@ function Home() {
         </div>
       </section>
       <JoinSection />
-      <Footer />
     </div>
   );
 }
