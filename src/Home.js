@@ -20,7 +20,7 @@ const PROJECTS = [
     description: 'Pioneering project evaluating AI models on Islamic knowledge, creating comprehensive datasets for Fiqh and Aqeedah, and developing standardized grading systems. Features automated testing frameworks and detailed performance analytics.',
     image: image2,
     tech: ['Python', 'LangChain', 'Evaluation Framework', 'Dataset Creation'],
-    link: 'https://halalai.org/'
+    link: 'https://mcc-genai-guild.vercel.app/'
   },
   {
     title: 'MTC Website',
