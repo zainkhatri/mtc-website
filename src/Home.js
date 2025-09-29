@@ -2,9 +2,9 @@
 import React from 'react';
 import './Home.css';
 import mtcLogo from './images/mtc-logo.png';
-import image1 from './images/image1.jpg';
-import image2 from './images/image2.JPG';
-import image3 from './images/image3.JPG';
+import image1 from './images/image3.JPG';
+import image2 from './images/image1.jpeg';
+import image3 from './images/image2.JPG';
 
 // Projects data remains the same
 const PROJECTS = [
